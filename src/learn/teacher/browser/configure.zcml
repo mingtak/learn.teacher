@@ -17,4 +17,12 @@
         directory="static"
         />
 
+    <browser:page
+          for="*"
+          name="test"
+          permission="zope2.Public"
+          class=".views.MyView"
+          />
+
+
 </configure>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Teacher"/>
+    <role name="Student"/>
+  </roles>
+  <permissions>
+
+    <permission name="learn.teacher: Is Teacher" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Teacher" />
+    </permission>
+
+    <permission name="learn.teacher: Is Student" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Student" />
+    </permission>
+
+  </permissions>
+</rolemap>
